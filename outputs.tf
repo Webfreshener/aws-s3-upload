@@ -1,3 +1,7 @@
-output "invoke_url" {
-  value = "${aws_api_gateway_deployment.S3APIDeployment.invoke_url}/${aws_api_gateway_resource._.path}"
+output "path" {
+  value = aws_api_gateway_resource._.path
+}
+
+output "resource_id" {
+  value = aws_api_gateway_resource._.id
 }
